@@ -1,6 +1,10 @@
-import algos.number_of_squareful_arrays.Solution
+import algo.available_captures_for_rook.Solution
 
 fun main(){
-   Solution().numSquarefulPerms(intArrayOf(5,11,5,4))
-       .run { print("It's $this\n") }
+    val board = arrayOf(
+        charArrayOf('.', 'p', '.'),
+        charArrayOf('p', 'R', 'p'),
+        charArrayOf('.', 'p', '.'))
+
+    Solution().numRookCaptures(board).run { print("$this\n") }
 }
